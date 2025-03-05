@@ -9,7 +9,7 @@ public class gatescript : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        //animator = GetComponent<Animator>(); 
+        animator = GetComponent<Animator>(); 
     }
 
     // Update is called once per frame
@@ -26,5 +26,10 @@ public class gatescript : MonoBehaviour
     private void OnTriggerExit(Collider other)
     {
         animator.Play("closeSesame");
+    }
+
+    public void OnPowerUp()
+    {
+        animator.Play("openSesame");
     }
 }
