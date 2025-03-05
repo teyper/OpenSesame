@@ -4,12 +4,12 @@ using UnityEngine;
 
 public class gatescript : MonoBehaviour
 {
-    Animator animator;
-
+    [SerializeField]  Animator animator;
+    
     // Start is called before the first frame update
     void Start()
     {
-        animator = GetComponent<Animator>(); 
+        //animator = GetComponent<Animator>(); 
     }
 
     // Update is called once per frame
@@ -20,11 +20,11 @@ public class gatescript : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        animator.Play("open");
+        animator.Play("openSesame");
     }
 
     private void OnTriggerExit(Collider other)
     {
-        animator.Play("close");
+        animator.Play("closeSesame");
     }
 }
