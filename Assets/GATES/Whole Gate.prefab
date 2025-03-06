@@ -45,7 +45,7 @@ Animator:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2975329772368456777}
-  m_Enabled: 0
+  m_Enabled: 1
   m_Avatar: {fileID: 0}
   m_Controller: {fileID: 9100000, guid: befe1c46c63ec4004af7f7ceef297168, type: 2}
   m_CullingMode: 0
@@ -91,7 +91,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 98cfe8457741348d09a7f4898722237e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  animator: {fileID: 1914484896603520843}
+  animator: {fileID: 0}
 --- !u!1001 &6158266040917811524
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -188,7 +188,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6215067830317088997, guid: 6e6e3adc6c7144dda9ef54831da024c8, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: -2.66
       objectReference: {fileID: 0}
     - target: {fileID: 6215067830317088997, guid: 6e6e3adc6c7144dda9ef54831da024c8, type: 3}
       propertyPath: m_LocalPosition.z
@@ -232,7 +232,7 @@ PrefabInstance:
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 1563861675495448605, guid: 6e6e3adc6c7144dda9ef54831da024c8, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 1914484896603520843}
+      addedObject: {fileID: 5523226694756619871}
   m_SourcePrefab: {fileID: 100100000, guid: 6e6e3adc6c7144dda9ef54831da024c8, type: 3}
 --- !u!4 &799326184822829204 stripped
 Transform:
@@ -244,7 +244,7 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 1563861675495448605, guid: 6e6e3adc6c7144dda9ef54831da024c8, type: 3}
   m_PrefabInstance: {fileID: 6726017936249221233}
   m_PrefabAsset: {fileID: 0}
---- !u!95 &1914484896603520843
+--- !u!95 &5523226694756619871
 Animator:
   serializedVersion: 5
   m_ObjectHideFlags: 0
@@ -252,7 +252,7 @@ Animator:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5252444308837666924}
-  m_Enabled: 1
+  m_Enabled: 0
   m_Avatar: {fileID: 0}
   m_Controller: {fileID: 9100000, guid: befe1c46c63ec4004af7f7ceef297168, type: 2}
   m_CullingMode: 0
