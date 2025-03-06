@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class gatescript : MonoBehaviour
 {
-    [SerializeField]  Animator animator;
+     Animator animator;
     
     // Start is called before the first frame update
     void Start()
@@ -25,7 +25,7 @@ public class gatescript : MonoBehaviour
 
     private void OnTriggerExit(Collider other)
     {
-        animator.Play("closeSesame");
+        animator.Play("closeSesame1");
     }
 
     public void OnPowerUp()
