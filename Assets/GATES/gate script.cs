@@ -1,15 +1,19 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 
 public class gatescript : MonoBehaviour
 {
      Animator animator;
+    public UnityEvent PowerUp;
     
+
     // Start is called before the first frame update
-    void Start()
+    public void Start()
     {
-        animator = GetComponent<Animator>(); 
+        animator = GetComponent<Animator>();
+        
     }
 
     // Update is called once per frame
@@ -21,15 +25,25 @@ public class gatescript : MonoBehaviour
     private void OnTriggerEnter(Collider other)
     {
         animator.Play("openSesame");
+        animator.Play("longOpen");
+      
+
     }
 
     private void OnTriggerExit(Collider other)
     {
-        animator.Play("closeSesame1");
+        animator.Play("closeSesame");
+        animator.Play("longClose");
+
     }
 
     public void OnPowerUp()
     {
         animator.Play("openSesame");
+        Debug.Log("yes!");
+
     }
+
+
+    
 }
